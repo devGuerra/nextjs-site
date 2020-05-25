@@ -19,10 +19,11 @@ export default function Home({ groups, categories }) {
   return (
     <>
       <Head>
-        <title>Gerazap - links de grupo do whatsapp</title>
+        <title>LinkGrupos - links de grupo do whatsapp</title>
         <meta http-equiv="Content-Language" content="pt-br"></meta>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="A melhor lista de links de grupos de WhatsApp que você já conheceu. É grátis, simples e fácil você encontrar e entrar em um grupo de WhatsApp. Apenas um clique!"></meta>
+        <meta name="description" content="Os melhores links de grupos do whatsapp, 
+        encontre as melhores categorias, gratis e facil, em apenas um click ja esta com um novo Grupo do whatsapp"></meta>
         <script data-ad-client="ca-pub-2270636537108959" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://linkgrupos.app/" />
