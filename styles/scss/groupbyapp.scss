@@ -1,0 +1,50 @@
+main {
+  .feedOne {
+    display: flex;
+    justify-content: center;
+
+    #GroupByApp {
+      .groupCard {
+        .groupContent {
+          border-radius: 50%;
+          width: 120px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        h2 {
+          color: #fff;
+          font-size: 16px;
+          text-align: center;
+          margin: 5px 0;
+          font-weight: normal;
+        }
+
+        div {
+          button {
+            border-radius: 5px;
+            background-color: #01e675;
+            display: flex;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            line-height: 19px;
+            padding: 10px 17px;
+            height: auto;
+            white-space: nowrap;
+            text-transform: uppercase;
+            width: 180px;
+            margin: 0 auto 5px;
+          }
+        }
+      }
+    }
+  }
+}
