@@ -1,0 +1,63 @@
+header {
+  height: 60px;
+  background-color: #128c7e;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+header .widthContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 1280px) {
+  header .widthContainer {
+    max-width: 1100px;
+    padding: 0 20px;
+  }
+}
+header .widthContainer ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+header .widthContainer ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .widthContainer ul .left a {
+  height: 80%;
+  align-items: center;
+  display: flex;
+}
+header .widthContainer ul .left a img {
+  height: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+header .widthContainer ul .left a span {
+  color: #fff;
+  margin-left: 20px;
+}
+@media (max-width: 767px) {
+  header .widthContainer ul .left a span {
+    display: none;
+  }
+}
+header .widthContainer ul .right a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+  margin-left: 20px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=header.css.map */

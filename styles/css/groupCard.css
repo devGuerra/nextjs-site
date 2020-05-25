@@ -1,0 +1,92 @@
+@media (min-width: 767px) {
+  .feed {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-gap: 15px;
+  }
+}
+.feed .groupCard {
+  max-width: 350px;
+  max-height: 350px;
+}
+@media (min-width: 767px) {
+  .feed .groupCard {
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
+.feed .groupCard .groupContent {
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.feed .groupCard .groupContent img {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .feed .groupCard .groupContent img {
+    height: 250px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.feed .groupCard .groupContent .groupDescription {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #000;
+  overflow: hidden;
+}
+.feed .groupCard .groupContent .groupDescription h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.feed .groupCard .groupContent .groupDescription span {
+  font-size: 14px;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-transform: lowercase;
+}
+
+.groupButton {
+  height: 60px;
+  width: 100%;
+  border: 0;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #128c7e;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.groupButton:active {
+  opacity: 0.6;
+}
+
+.report {
+  background-color: #6b1212;
+  border: none;
+  border-radius: 2px;
+  padding: 5px 20px;
+  color: #fff;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.report:active {
+  opacity: 0.6;
+}
+
+/*# sourceMappingURL=groupcard.css.map */

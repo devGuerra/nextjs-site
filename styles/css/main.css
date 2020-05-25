@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 60px;
+  background-color: #128c7e;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+header .widthContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 1280px) {
+  header .widthContainer {
+    max-width: 1100px;
+    padding: 0 20px;
+  }
+}
+header .widthContainer ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+header .widthContainer ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .widthContainer ul .left a {
+  height: 80%;
+  align-items: center;
+  display: flex;
+}
+header .widthContainer ul .left a img {
+  height: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+header .widthContainer ul .left a span {
+  color: #fff;
+  margin-left: 20px;
+}
+@media (max-width: 767px) {
+  header .widthContainer ul .left a span {
+    display: none;
+  }
+}
+header .widthContainer ul .right a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+  margin-left: 20px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.category {
+  height: 80px;
+  background-color: #ece5dd;
+  position: relative;
+  margin-bottom: 20px;
+  transition: 0.1s ease;
+}
+.category ul {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  grid-auto-rows: min-content;
+  overflow: scroll;
+}
+@media (min-width: 769px) {
+  .category ul {
+    width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(10, 1fr);
+    overflow: hidden;
+  }
+}
+.category ul a {
+  text-decoration: none;
+  color: #000;
+}
+.category ul a li {
+  margin: 10px;
+  list-style: none;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.category ul a li .icon {
+  display: block;
+  height: 3 2px;
+  width: 32px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+@media (min-width: 769px) {
+  .category ul a li .icon {
+    height: 28px;
+    width: 28px;
+  }
+}
+.category button {
+  position: absolute;
+  bottom: -10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: #fff;
+  padding: 0 20px;
+  border-radius: 2px;
+  border: 1px solid rgba(161, 161, 161, 0.432);
+}
+@media (max-width: 1023px) {
+  .category button {
+    display: none;
+  }
+}
+.category button:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 767px) {
+  .feed {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-gap: 15px;
+  }
+}
+.feed .groupCard {
+  max-width: 350px;
+  max-height: 350px;
+}
+@media (min-width: 767px) {
+  .feed .groupCard {
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
+.feed .groupCard .groupContent {
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.feed .groupCard .groupContent img {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .feed .groupCard .groupContent img {
+    height: 250px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.feed .groupCard .groupContent .groupDescription {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #000;
+  overflow: hidden;
+}
+.feed .groupCard .groupContent .groupDescription h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.feed .groupCard .groupContent .groupDescription span {
+  font-size: 14px;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-transform: lowercase;
+}
+
+.groupButton {
+  height: 60px;
+  width: 100%;
+  border: 0;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #128c7e;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.groupButton:active {
+  opacity: 0.6;
+}
+
+.report {
+  background-color: #6b1212;
+  border: none;
+  border-radius: 2px;
+  padding: 5px 20px;
+  color: #fff;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.report:active {
+  opacity: 0.6;
+}
+
+* {
+  font-family: "Roboto", "sans-serif";
+}
+
+body {
+  background: #172a3a;
+}
+body .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+body .container h1, body .container h2 {
+  color: #fff;
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 22px;
+}
+body .container .groupDescription h2 {
+  color: #000;
+  font-size: 16px;
+  margin: 0;
+}
+body .container main {
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body .container main .cardApprove {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #fff;
+  width: 300px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+body .container main .cardApprove .description {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+body .container main .cardApprove .description img {
+  overflow: hidden;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  max-width: 100%;
+  overflow: hidden;
+}
+body .container main .cardApprove .description h2 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+body .container main .cardApprove .description p {
+  color: #fff;
+  font-size: 12px;
+}
+body .container main .cardApprove .description span {
+  color: #fff;
+  font-size: 12px;
+}
+body .container main .cardApprove .btn-container {
+  display: flex;
+}
+body .container main .cardApprove .btn-container button {
+  border: 0;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+body .container main .cardApprove .btn-container .btn-reprove {
+  background-color: red;
+}
+body .container main .cardApprove .btn-container .btn-chat {
+  background-color: #fff;
+  color: #000;
+}
+body .container main .cardApprove .btn-container .btn-chat a {
+  text-decoration: none;
+}
+body .container main .cardApprove .btn-container .btn-approve {
+  background-color: green;
+}
+body .seo-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+body .seo-content .footer-text {
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #fff;
+}
+body .seo-content .footer-text h2 {
+  margin: 40px 0 20px;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=main.css.map */
