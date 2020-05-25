@@ -19,7 +19,7 @@ export default function Home({ groups, categories }) {
   return (
     <>
       <Head>
-        <title>LinkGrupos - links de grupo do whatsapp</title>
+        <title>LinkGrupos - Links de Grupos do Whatsapp</title>
         <meta http-equiv="Content-Language" content="pt-br"></meta>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Os melhores links de grupos do whatsapp, 
