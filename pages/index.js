@@ -26,6 +26,8 @@ export default function Home({ groups, categories }) {
         <script data-ad-client="ca-pub-2270636537108959" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://linkgrupos.app/" />
+        <meta property="og:url" content="https://linkgrupos.app/" />
+        <meta property="og:image" content="/logo.png" />
         <meta property="og:site_name" content="WhatsApp Group Links" />
       </Head>
       <Header />
