@@ -28,7 +28,7 @@ function GroupByApp({ data }) {
         rel="noopener noreferrer"
       >
         <div className="groupContent">
-          <img src={data.avatar} alt={data.name} />
+          <img src={data.avatar || '/no-img.png'} alt={data.name} />
         </div>
         <h2>{data.name}</h2>
         <div>

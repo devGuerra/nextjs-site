@@ -3,7 +3,6 @@ import React from 'react';
 import Link from 'next/link';
 import ReactGA from 'react-ga';
 
-
 function GroupCard({ data }) {
   return (
     <>
@@ -20,7 +19,7 @@ function GroupCard({ data }) {
             })}
           >
             <div className="groupContent">
-              <img src={data.avatar} alt={data.name} />
+              <img src={data.avatar || '/no-img.png'} alt={data.name} />
               <div className="groupDescription">
                 <h2>{data.name}</h2>
                 {data.description && <span>{data.description}</span>}
